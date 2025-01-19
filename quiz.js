@@ -1,4 +1,4 @@
-function checkAnswer() {
+function checkAnswer (){
     // Correct answer (should not change, so use const)
     const correctAnswer = "4";
 
