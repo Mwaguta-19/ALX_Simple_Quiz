@@ -8,16 +8,13 @@ function checkAnswer() {
    
     const feedbackElement = document.getElementById('feedback');
 
-    if (userAnswer) {
+    if (userAnswer === correctAnswer) {
+
+        feedbackElement.textContent = "Correct! Well done.";
        
-        if (userAnswer.value === correctAnswer) {
-            feedbackElement.textContent = "Correct! Well done.";
-        } else {
-            feedbackElement.textContent = "That's incorrect. Try again!";
-        }
-        
     } else {
-        feedbackElement.textContent = "Please select an answer.";
+        
+    feedbackElement.textContent = "That's incorrect. Try again!";
     }
     
 }
