@@ -1,15 +1,15 @@
 function checkAnswer() {
-    // Correct answer
+    
     const correctAnswer = "4";
 
-    // Get the selected answer from the radio buttons
-    let userAnswer = document.querySelector('input[name="quiz"]:checked');
+   
+    const userAnswer = document.querySelector('input[name="quiz"]:checked');
 
-    // Get the feedback element
+   
     const feedbackElement = document.getElementById('feedback');
 
     if (userAnswer) {
-        // Compare the user's answer with the correct answer
+       
         if (userAnswer.value === correctAnswer) {
             feedbackElement.textContent = "Correct! Well done.";
         } else {
@@ -21,6 +21,4 @@ function checkAnswer() {
     }
     
 }
-
-// Event listener to the submit button
 document.getElementById('submit-answer').addEventListener('click', checkAnswer);
